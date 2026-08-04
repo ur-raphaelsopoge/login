@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f0c20;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: #1b1535;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.4);
+  width: 380px;
+  text-align: center;
+  border: 2px solid #8a2be2;
+  position: relative;
+}
+
+.scary-title {
+  color: #ff0055;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  text-shadow: 0 0 10px #ff0055;
+}
+
+.subtitle {
+  color: #a0a0c0;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.field-wrapper {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid #44337a;
+  background: #0f0c20;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ff79c6;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff0055;
+}
+
+.float-1 {
+  animation: crazyFly1 1.2s infinite ease-in-out alternate;
+}
+
+.float-2 {
+  animation: crazyFly2 0.8s infinite ease-in-out alternate;
+}
+
+.float-3 {
+  animation: crazyFly3 0.5s infinite linear;
+}
+
+@keyframes crazyFly1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(250px, -200px) rotate(15deg); }
+  50%  { transform: translate(-300px, 150px) scale(0.8); }
+  75%  { transform: translate(180px, 300px) rotate(-20deg); }
+  100% { transform: translate(-200px, -180px) scale(1.1); }
+}
+
+@keyframes crazyFly2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  33%  { transform: translate(-280px, -150px) rotate(180deg); }
+  66%  { transform: translate(200px, 220px) rotate(360deg); }
+  100% { transform: translate(-150px, 250px) rotate(540deg); }
+}
+
+@keyframes crazyFly3 {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(320px, -100px); }
+  40%  { transform: translate(-250px, -250px); }
+  60%  { transform: translate(150px, 200px); }
+  80%  { transform: translate(-300px, 80px); }
+  100% { transform: translate(0, 0); }
+}
