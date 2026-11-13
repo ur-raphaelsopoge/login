@@ -15,3 +15,8 @@ Accounts
 - Clients: create an account on the sign-up tab.
 
 Data is stored in the browser (localStorage). Clear site data to reset.
+Members/Contributors
+1.jhunry Marquez
+2.Reghji Janapin
+3.Efren Francis Annonevo
+4. John Cardel
